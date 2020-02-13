@@ -1,0 +1,22 @@
+body{
+    background: aliceblue;
+}
+
+div#navbar{
+    display: grid;
+    height: 50px;
+    grid-template-columns: 150px 200px 100px 100px 100px auto;
+    background: lightgray;
+
+}
+
+.one{
+    background: lightgray;
+    align-self: center;
+
+}
+.two{
+    background: lightgray;
+    text-align: right;
+    align-self: center;
+}
