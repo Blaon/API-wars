@@ -23,13 +23,10 @@ div#navbar{
 
 div#stable{
     display: grid;
-    height: 50px;
+    height: auto;
     width: auto;
     grid-template-columns: auto auto auto auto auto auto auto auto;
     grid-template-rows: auto;
-    border-color: grey;
-    border-width: 0.5px;
-    border-style: solid;
 
 }
 
@@ -38,6 +35,9 @@ div#stable_div{
     border-width: 0.5px;
     border-style: solid;
     text-align: center;
+    height: 50px;
+    align-self: center;
+    vertical-align: center;
 }
 
 div#stable_button{

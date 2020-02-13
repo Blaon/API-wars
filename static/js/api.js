@@ -22,11 +22,17 @@ function process(data) {
     let keys = ['name', 'diameter', 'climate', 'terrain', 'surface_water', 'population', 'residents', 'vote'];
     for (let planet of data.results) {
         for (let key of keys){
-            if (key !== 'vote' && key !== 'residents'){
+            if (key !== 'vote' && key !== 'residents' && key !== 'diameter'){
                 let new_row = document.createElement('div');
                 new_row.textContent = planet[key];
                 new_row.id = 'stable_div';
                 document.getElementById('stable').appendChild(new_row)
+            }
+            else if (key === 'diameter'){
+                let diameter = document.createElement('div');
+                    diameter.textContent = `${planet[key]} km`;
+                    diameter.id = 'stable_div';
+                    document.getElementById('stable').appendChild(diameter)
             }
             else if (key === 'residents'){
                 if (planet[key].length < 1){
